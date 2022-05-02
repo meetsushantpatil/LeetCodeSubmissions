@@ -6,8 +6,12 @@ class Solution:
         
         for i in range(0,len(nums)):
             second_num = target - nums[i]
-            if second_num in num_dict:
-                if(i!=num_dict[second_num]):
-                    return i,num_dict[second_num]
+            try: 
+                if num_dict[second_num]:
+                    if(i!=num_dict[second_num]):
+                        return i,num_dict[second_num]
+            except:
+                pass
+        
         
         

@@ -9,7 +9,7 @@ class Logger:
                 self.logstream_dict[message] = timestamp
                 return True    
             return False
-        elif(message not in self.logstream_dict):
+        else:
             self.logstream_dict[message]=timestamp
             return True
             

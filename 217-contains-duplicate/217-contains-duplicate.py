@@ -4,7 +4,6 @@ class Solution:
         for i in nums:
             if(i in num_dict):
                 return True
-            else:
-                num_dict.add(i)
+            num_dict.add(i)
                 
         return False

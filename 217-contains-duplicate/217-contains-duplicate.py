@@ -4,6 +4,7 @@ class Solution:
         for i in nums:
             if(i in num_dict):
                 return True
-            num_dict[i] = "#"
+            else:
+                num_dict[i] = "#"
                 
         return False

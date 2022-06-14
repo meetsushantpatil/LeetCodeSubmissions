@@ -1,8 +1,11 @@
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
-        set_num = sorted(set(nums))
-        nums.sort()
-        if(list(set_num)==nums):
-            return False
-        else:
-            return True
+        num_dict = {}
+        for i in nums:
+            if(i in num_dict):
+                print(num_dict)
+                return True
+            else:
+                num_dict[i] = "#"
+                
+        return False

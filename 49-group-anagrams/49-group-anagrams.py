@@ -6,10 +6,7 @@ class Solution:
                 
         for i in strs :
             sorted_list.append(''.join(sorted(i)))
-            
-        # string_set = set(sorted_list)
-        # result = [""]*len(string_set)
-        
+     
         if(len(sorted_list)==2):
             if(sorted_list[0]==sorted_list[1]):
                 return [[strs[0],strs[1]]]

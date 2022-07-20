@@ -1,26 +1,21 @@
-# Test () 0
-
 class Solution:
     def isValid(self, s: str) -> bool:
-        braces_dict = {')':'(', '}':'{', ']':'['}
+        
         stack = []
+        mapping = {')':'(', ']':'[', '}':'{'}
         
-        for brace in s:
-            if brace in braces_dict:
-                if(stack):
-                    top_element = stack.pop()
-                else:
-                    top_element = "#"
-                    
-                if(top_element!=braces_dict[brace]):
-                    return False
-                
-            else:
-                stack.append(brace)
-                
-        
-        return not stack
+        for i in s:
             
-        
-        
-        
+            if(i in mapping):
+                if(stack):
+                    top = stack.pop()
+                else:
+                    top = "#"
+                    
+                if(top!=mapping[i]):
+                    return False
+            else:
+                stack.append(i)
+                
+                
+        return not stack

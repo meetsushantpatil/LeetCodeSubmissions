@@ -10,9 +10,6 @@ class HitCounter:
     def getHits(self, timestamp: int) -> int:
         i = 0
         
-        # if(timestamp==self.last_timestamp):
-        #     return len(self.list)
-        
         while(i<len(self.list)):
             if(timestamp>300):
                 if(self.list[i]<=(timestamp-300)): # [1,2,3,4,300]

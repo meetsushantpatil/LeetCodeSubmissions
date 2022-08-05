@@ -2,7 +2,6 @@ class HitCounter:
 
     def __init__(self):
         self.list = []    
-        self.last_timestamp = 0
 
     def hit(self, timestamp: int) -> None:
         self.list.append(timestamp)
@@ -17,7 +16,6 @@ class HitCounter:
                     i-=1
             i+=1
             
-        self.last_timestamp = timestamp
         return len(self.list)
 
 

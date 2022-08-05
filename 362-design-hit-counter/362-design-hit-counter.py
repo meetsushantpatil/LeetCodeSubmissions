@@ -1,3 +1,5 @@
+# O(n)
+
 class HitCounter:
 
     def __init__(self):

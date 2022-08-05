@@ -10,8 +10,8 @@ class HitCounter:
     def getHits(self, timestamp: int) -> int:
         i = 0
         
-        if(timestamp==self.last_timestamp):
-            return len(self.list)
+        # if(timestamp==self.last_timestamp):
+        #     return len(self.list)
         
         while(i<len(self.list)):
             if(timestamp>300):

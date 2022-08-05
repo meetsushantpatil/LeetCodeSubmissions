@@ -28,7 +28,3 @@ class HitCounter:
 # obj = HitCounter()
 # obj.hit(timestamp)
 # param_2 = obj.getHits(timestamp)
-
-
-["HitCounter","hit","hit","hit","hit","getHits","hit","getHits","hit","getHits"]
-[[],[1],[1],[1],[300],[300],[300],[300],[301],[301]]

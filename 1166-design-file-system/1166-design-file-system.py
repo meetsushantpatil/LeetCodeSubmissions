@@ -14,9 +14,10 @@ class FileSystem:
         if(path in self.complete_path):
             return False
         
+        
         parent = path[:path.rfind('/')]
         if len(parent) > 1 and parent not in self.complete_path:
-            return False 
+            return False
          
         self.complete_path[path] = value
         return True

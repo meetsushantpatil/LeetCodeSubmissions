@@ -14,7 +14,7 @@ class MyCalendar:
                     return False
                 elif(end>start_temp and end<=end_temp):
                     return False
-                elif(start<start_temp and end>=end_temp):
+                elif(start<start_temp and end>end_temp):
                     return False
             
             self.event_list.append([start,end])

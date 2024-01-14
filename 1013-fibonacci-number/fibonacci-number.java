@@ -14,7 +14,6 @@ class Solution {
             result = fib(n-1) + fib(n-2);
         }
 
-        
         return result;
         
     }

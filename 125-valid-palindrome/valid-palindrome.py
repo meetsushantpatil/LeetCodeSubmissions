@@ -25,7 +25,6 @@ class Solution:
                 else:
                     left_ptr+= 1
                     right_ptr-= 1 
-                    continue
             
             if not s[left_ptr].isalnum():
                 left_ptr+= 1

@@ -17,7 +17,7 @@ class Solution:
             if price < min_price: 
                 min_price = price # Testing - [1, 1, 1], [6,5,1], [1]
             
-            temp_max_profit =  price - min_price # testing = [0,3,6], [0, -1, -5], [0]
+            temp_max_profit =  price - min_price # Testing = [0,3,6], [0, -1, -5], [0]
             if temp_max_profit > max_profit:
                 max_profit = temp_max_profit # Testing = [0,3,6], [0,0,0], [0]
 

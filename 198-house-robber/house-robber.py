@@ -3,8 +3,8 @@
 # Repeat - Given a list of numbers, pick numbers in a such a way that you get the max sum, but the 2 numbers can not be adjacent
 # Approach - Bottom Up Dynamic Programming
 # Code - 
-# Test - 
-# Optimize - 
+# Test - Works
+# Optimize - Storage can be optimized
 
 # Test 1
 # inputs = [1,2,1,15,6]
